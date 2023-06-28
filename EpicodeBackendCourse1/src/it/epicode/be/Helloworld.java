@@ -39,13 +39,13 @@ public static void main (String[] args)
 		System.out.println(pariDispari(3));
 		
 		Scanner tr = new Scanner(System.in);
-		System.out.print("A:");
+		System.out.print("Lato A:");
 		String a = tr.nextLine();
 		double aDouble = Double.parseDouble(a);
-		System.out.print("B:");
+		System.out.print("Lato B:");
 		String b = tr.nextLine();
 		double bDouble = Double.parseDouble(b);
-		System.out.print("C:");
+		System.out.print("Lato C:");
 		String c = tr.nextLine();
 		double cDouble = Double.parseDouble(c);
 		
