@@ -1,0 +1,20 @@
+14:46:12.319 [main] ERROR es1s2.MainProject - error
+14:46:51.768 [main] ERROR es1s2.MainProject - error
+14:47:59.867 [main] INFO  es1s2.MainProject - inviare
+14:47:59.872 [main] DEBUG es1s2.MainProject - dawdawd
+14:47:59.872 [main] WARN  es1s2.MainProject - messaggio
+14:47:59.872 [main] ERROR es1s2.MainProject - error
+15:11:50.187 [main] INFO  es1s2.MainProject - inviare
+15:11:50.191 [main] DEBUG es1s2.MainProject - dawdawd
+15:11:50.191 [main] WARN  es1s2.MainProject - messaggio
+15:11:50.191 [main] ERROR es1s2.MainProject - error
+15:41:44.980 [main] INFO  es1s2.MainProject - Errore: Posizione non valida. Riprova.
+15:42:36.479 [main] INFO  es1s2.MainProject - Errore: Posizione non valida. Riprova.
+15:44:17.330 [main] INFO  es1s2.MainProject - Errore: Posizione non valida. Riprova.
+15:45:16.337 [main] INFO  es1s2.MainProject - Errore: Posizione non valida. Riprova.
+15:46:09.807 [main] INFO  es1s2.MainProject - Errore: Posizione non valida. Riprova.
+15:52:07.498 [main] INFO  es1s2.MainProject - Errore: Posizione non valida. Riprova.
+15:52:20.450 [main] INFO  es1s2.MainProject - Errore: Numero non valido. Riprova.
+15:52:22.083 [main] INFO  es1s2.MainProject - Errore: Numero non valido. Riprova.
+15:52:22.620 [main] INFO  es1s2.MainProject - Errore: Numero non valido. Riprova.
+15:52:36.518 [main] INFO  es1s2.MainProject - Errore: Posizione non valida. Riprova.
