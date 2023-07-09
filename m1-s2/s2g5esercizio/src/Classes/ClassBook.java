@@ -1,7 +1,13 @@
 package Classes;
 
-public class ClassBook extends ClassPropShared {
+import java.io.Serializable;
+
+public class ClassBook extends ClassPropShared implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String autor;
 	private String genre;
 	
@@ -22,7 +28,4 @@ public class ClassBook extends ClassPropShared {
 	public void setGenre(String genre) {
 		this.genre = genre;
 	}
-
-	
-	
 }

@@ -1,7 +1,13 @@
 package Classes;
 
-public class ClassMagazine extends ClassPropShared {
+import java.io.Serializable;
+
+public class ClassMagazine extends ClassPropShared implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Periodicity period;
 	
 	public ClassMagazine(String isbn, String title, Integer yP, Integer nPag, Periodicity period) {
@@ -16,6 +22,4 @@ public class ClassMagazine extends ClassPropShared {
 	public void setPeriod(Periodicity period) {
 		this.period = period;
 	}
-	
-
 }

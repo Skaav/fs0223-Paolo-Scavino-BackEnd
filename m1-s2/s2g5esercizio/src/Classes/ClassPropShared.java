@@ -1,7 +1,13 @@
 package Classes;
 
-public abstract class ClassPropShared {
+import java.io.Serializable;
+
+public abstract class ClassPropShared implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	protected String isbn;
 	protected String title;
 	protected Integer yP;
@@ -47,5 +53,11 @@ public abstract class ClassPropShared {
 		this.nPag = nPag;
 	}
 	
-		
+	@Override
+	public String toString() {
+		return "ISBN: " + isbn + 
+				" " + "Title: " + title + 
+				" " + "Publish year: " + yP + 
+				" " + "Page numbers: " + nPag;
+	}
 }
