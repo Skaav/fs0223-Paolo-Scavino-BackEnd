@@ -32,12 +32,14 @@ public class MainProg {
 		// Esempio di ricerca per ISBN
 		Optional<ClassPropShared> element = books.searchBookISBN("9789999999999");
 		element.ifPresent(value -> System.out.println("Ricerca per ISBN: " + value.getTitle()));
+		System.out.println("-----------------------------");
 
 		// Esempio di ricerca per anno pubblicazione
 		List<ClassPropShared> elementYP = books.searchByYP(2023);
 		System.out.print("Search by Published Year: ");
 		for (ClassPropShared elementoCatalogo : elementYP) {
 			System.out.println(elementoCatalogo.getTitle());
+			System.out.println("-----------------------------");
 		}
 
 		// Esempio di ricerca per autore
@@ -45,6 +47,7 @@ public class MainProg {
 		System.out.print("Search by Autor: ");
 		for (ClassPropShared elementoCatalogo : elementAutor) {
 			System.out.println(elementoCatalogo.getTitle());
+			System.out.println("-----------------------------");
 		}
 
 		// Esempio di ricerca per periodicità (applicabile solo alle riviste)
@@ -52,13 +55,13 @@ public class MainProg {
 		System.out.print("Search by Period: ");
 		for (ClassMagazine rivista : elementByPeriod) {
 			System.out.println(rivista.getTitle());
+			System.out.println("-----------------------------");
 		}
 
 		// Salvataggio e caricamento dati
-		
 		books.saveOnDisk("archive.dat");
-		
 		books.loadFromDisk("archive.dat");
+		System.out.println("-----------------------------");
 		
 		// Stampa del documento salvato
 		List<ClassPropShared> archiveBooks = books.getA();
