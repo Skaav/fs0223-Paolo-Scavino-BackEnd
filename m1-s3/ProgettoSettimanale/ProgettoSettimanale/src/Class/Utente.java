@@ -1,7 +1,8 @@
 package Class;
 
 import javax.persistence.*;
-import java.util.Date;
+
+import java.time.LocalDate;
 
 @Entity
 public class Utente {
@@ -11,7 +12,7 @@ public class Utente {
 
     private String nome;
     private String cognome;
-    private Date dataNascita;
+    private LocalDate dataNascita;
     private String numeroTessera;
 
     public Long getId() {
@@ -38,11 +39,11 @@ public class Utente {
         this.cognome = cognome;
     }
 
-    public Date getDataNascita() {
+    public LocalDate getDataNascita() {
         return dataNascita;
     }
 
-    public void setDataNascita(Date dataNascita) {
+    public void setDataNascita(LocalDate dataNascita) {
         this.dataNascita = dataNascita;
     }
 

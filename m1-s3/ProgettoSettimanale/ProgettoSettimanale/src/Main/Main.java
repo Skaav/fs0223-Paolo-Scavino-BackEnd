@@ -1,6 +1,6 @@
 package Main;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 import Class.ArchivioBibliotecario;
@@ -8,7 +8,6 @@ import Class.ElementoCatalogo;
 import Class.Libro;
 import Class.Prestito;
 import Class.Utente;
-import org.apache.commons.lang.time.DateUtils;
 
 public class Main {
 
@@ -45,14 +44,14 @@ public class Main {
 		Utente utente1 = new Utente();
 		utente1.setNome("Mario");
 		utente1.setCognome("Rossi");
-		utente1.setDataNascita(new Date());
+		utente1.setDataNascita(LocalDate.of(1995,12,16));
 		utente1.setNumeroTessera("00001");
 
 		Prestito prestito1 = new Prestito();
 		prestito1.setUtente(utente1);
 		prestito1.setElemento(libro1);
-		prestito1.setDataInizioPrestito(new Date());
-		prestito1.setDataRestituzionePrevista(DateUtils.addDays(new Date(), 30));
+		prestito1.setDataInizioPrestito(LocalDate.now());
+		prestito1.setDataRestituzionePrevista(LocalDate.now().plusDays(30));
 
 		archivio.aggiungiPrestito(prestito1);
 

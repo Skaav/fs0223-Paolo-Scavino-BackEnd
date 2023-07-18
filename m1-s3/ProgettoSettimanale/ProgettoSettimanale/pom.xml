@@ -42,11 +42,6 @@
 			<artifactId>hibernate-core</artifactId>
 			<version>5.6.15.Final</version>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang</artifactId>
-			<version>2.6</version>
-		</dependency>
 	</dependencies>
 
 	<build>

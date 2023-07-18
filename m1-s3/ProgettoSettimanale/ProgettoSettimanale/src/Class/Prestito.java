@@ -1,7 +1,8 @@
 package Class;
 
 import javax.persistence.*;
-import java.util.Date;
+
+import java.time.LocalDate;
 
 @Entity
 public class Prestito {
@@ -15,9 +16,9 @@ public class Prestito {
     @ManyToOne
     private ElementoCatalogo elemento;
 
-    private Date dataInizioPrestito;
-    private Date dataRestituzionePrevista;
-    private Date dataRestituzioneEffettiva;
+    private LocalDate dataInizioPrestito;
+    private LocalDate dataRestituzionePrevista;
+    private LocalDate dataRestituzioneEffettiva;
 
     public Long getId() {
         return id;
@@ -43,27 +44,27 @@ public class Prestito {
         this.elemento = elemento;
     }
 
-    public Date getDataInizioPrestito() {
+    public LocalDate getDataInizioPrestito() {
         return dataInizioPrestito;
     }
 
-    public void setDataInizioPrestito(Date dataInizioPrestito) {
+    public void setDataInizioPrestito(LocalDate dataInizioPrestito) {
         this.dataInizioPrestito = dataInizioPrestito;
     }
 
-    public Date getDataRestituzionePrevista() {
+    public LocalDate getDataRestituzionePrevista() {
         return dataRestituzionePrevista;
     }
 
-    public void setDataRestituzionePrevista(Date dataRestituzionePrevista) {
+    public void setDataRestituzionePrevista(LocalDate dataRestituzionePrevista) {
         this.dataRestituzionePrevista = dataRestituzionePrevista;
     }
 
-    public Date getDataRestituzioneEffettiva() {
+    public LocalDate getDataRestituzioneEffettiva() {
         return dataRestituzioneEffettiva;
     }
 
-    public void setDataRestituzioneEffettiva(Date dataRestituzioneEffettiva) {
+    public void setDataRestituzioneEffettiva(LocalDate dataRestituzioneEffettiva) {
         this.dataRestituzioneEffettiva = dataRestituzioneEffettiva;
     }
 }
